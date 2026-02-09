@@ -1,0 +1,180 @@
+/* Importa a fonte 'Cabin' do Google Fonts com diferentes pesos (400 a 700) */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Seletor universal: afeta todos os elementos da página */
+*{
+    margin: 0;           /* Remove margens padrão do navegador */
+    padding: 0;          /* Remove preenchimentos padrão do navegador */
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem o tamanho total do elemento */
+}
+
+/* Estilização do corpo da página */
+body{
+    background-color: #f4f0ea; /* Define a cor de fundo bege claro */
+    color: #798252;            /* Define a cor do texto padrão (verde musgo) */
+    font-family: "Cabin", sans-serif; /* Aplica a fonte importada */
+    font-weight: 400;          /* Define a espessura da fonte como normal */
+}
+
+/* Cabeçalho da página */
+header{
+    padding: 2rem;             /* Adiciona espaçamento interno */
+    background-color: #331F19; /* Fundo marrom escuro */
+    text-align: center;        /* Centraliza o conteúdo (texto/logo) */
+}
+
+/* Área principal de conteúdo */
+main{
+    padding: 2rem;             /* Espaçamento interno das laterais e topo */
+    display: flex;             /* Ativa o modelo Flexbox */
+    flex-direction: column;    /* Empilha os elementos um abaixo do outro */
+    gap: 2rem;                 /* Cria um espaço de 2rem entre cada elemento filho */
+}
+
+/* Seções de conteúdo */
+section{
+    display: flex;             /* Ativa Flexbox */
+    flex-direction: column;    /* Itens da seção ficam em coluna */
+    gap: 1rem;                 /* Espaço de 1rem entre itens da seção */
+}
+
+/* Títulos secundários */
+h2{
+    color: #331f19;            /* Cor marrom escuro */
+    font-size: 1.2rem;         /* Define o tamanho da fonte */
+}
+
+/* Customização de botões de rádio e checkbox */
+input[type="radio"], input[type="checkbox"]{
+    accent-color: #CCD595;     /* Muda a cor da "bolinha" ou "check" para verde oliva */
+}
+
+/* Inputs de texto, senha, data e email */
+input[type="text"], input[type="password"], input[type="date"], input[type="email"]{
+    width: 100%;               /* Faz o campo ocupar toda a largura disponível */
+    padding: 0.6rem;           /* Espaçamento interno para o texto não encostar nas bordas */
+    border: 2px solid #CCD595; /* Borda verde oliva de 2px */
+    outline: none;             /* Remove o contorno padrão do navegador ao clicar */
+    border-radius: 5px;        /* Arredonda os cantos em 5px */
+    background-color: transparent; /* Deixa o fundo do campo transparente */
+}
+
+/* Estilo do texto de exemplo dentro dos inputs */
+input::placeholder{
+    color: #cbbba7;            /* Cor bege acinzentado para o texto de dica */
+}
+
+/* Campos de seleção (dropdown) */
+select{
+    cursor: pointer;           /* Muda o cursor para a "mãozinha" */
+    background-color: #CCD595; /* Fundo verde oliva */
+    color:#331F19;             /* Texto marrom */
+    border-radius: 5px;        /* Cantos arredondados */
+    border: none;              /* Remove bordas padrão */
+    outline: none;             /* Remove contorno de foco */
+}
+
+/* Estilização de imagens */
+img{
+    width: 5rem;               /* Define uma largura fixa de 5rem */
+    border-radius: 5px;        /* Cantos levemente arredondados nas fotos */
+}
+
+/* Tabelas */
+table{
+    width: 100%;               /* Tabela ocupa toda a largura */
+    border-collapse: collapse; /* Remove espaços entre as bordas das células */
+}
+
+/* Cabeçalho da tabela */
+th{
+    background-color: #CCD595; /* Fundo verde oliva */
+    color: #331F19;            /* Texto marrom */
+    padding: 1rem;             /* Espaçamento interno */
+}
+
+/* Células da tabela */
+td{
+    color:#331F19;             /* Texto marrom */
+    padding: 1rem;             /* Espaçamento interno */
+    text-align: center;        /* Alinha o texto no centro da célula */
+}
+
+/* Rodapé da tabela */
+tfoot td{
+    background-color: #331F19; /* Fundo marrom escuro */
+    color: #f4f0ea;            /* Texto bege claro */
+}
+
+/* Elemento de sanfona (detalhes expansíveis) */
+details{
+    background-color: #CCD595; /* Fundo verde oliva */
+    border-radius: 5px;        /* Cantos arredondados */
+    padding: 1rem;             /* Espaçamento interno */
+}
+
+/* Título clicável do 'details' */
+summary{
+    color: #331F19;            /* Texto marrom */
+    margin: 0.rem;             /* Margem (o .rem indica valor zero ou erro de digitação para 0.5rem) */
+    cursor: pointer;           /* Indica que é clicável */
+}
+
+/* Listas ordenadas */
+ol{
+    margin-left: 1.5rem;       /* Recuo à esquerda para os números aparecerem */
+}
+
+/* Itens da lista */
+ol li{
+    padding: 0.2rem;           /* Pequeno espaçamento entre os itens da lista */
+}
+
+/* Agrupamento de campos de formulário */
+fieldset{
+    border: 2px solid #CCD595; /* Borda verde oliva */
+    border-radius: 5px;        /* Cantos arredondados */
+    padding: 1rem;             /* Espaçamento interno */
+}
+
+/* Título do fieldset */
+legend{
+    color: #331F19;            /* Texto marrom */
+    padding: 0 0.5rem;         /* Espaço nas laterais do texto para não encostar na borda */
+}
+
+/* Área de texto grande */
+textarea{
+    background-color: transparent; /* Fundo transparente */
+    outline: none;                 /* Remove contorno de foco */
+    border-radius: 5px;            /* Cantos arredondados */
+    border: 2px solid #CCD595;     /* Borda verde oliva */
+}
+
+/* Botões */
+button{
+    background-color: #CCD595; /* Fundo verde oliva */
+    border: none;              /* Sem bordas */
+    padding: 0.8rem;           /* Espaçamento interno */
+    color: #331F19;            /* Texto marrom */
+    border-radius: 5px;        /* Cantos arredondados */
+    cursor: pointer;           /* Cursor de mãozinha */
+}
+
+/* Rodapé da página */
+footer{
+    background-color: #331F19; /* Fundo marrom escuro */
+    padding: 2rem;             /* Espaçamento interno */
+    text-align: center;        /* Centraliza o texto */
+}
+
+/* Classe específica para parágrafos no rodapé */
+.paragrafo-footer{
+    color: #f4f0ea;            /* Texto bege claro */
+}
+
+/* Links dentro do rodapé */
+footer a{
+    text-decoration: none;     /* Remove o sublinhado padrão do link */
+    color:#CCD595;             /* Cor verde oliva claro */
+}

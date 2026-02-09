@@ -4,6 +4,8 @@
     <head> 
         <title> Quiz para programadores</title> <!--fica somente no head da pagina-->
         <meta name=" Descrição" content="Um quiz interativo para programadores">
+
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>  
 
@@ -154,15 +156,16 @@
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email"><br>
                     <label for="comentario">Comentario:</label><br>
-                    <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Digite seu comentario aqui"></textarea>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Digite seu comentario aqui"></textarea><br>
+                    <button  onclick="alert('FEEDBACK ENVIADO!')">Envie seu FeedBack</button>
                 </fieldset>     
             </form>
         </section>
 
     </main>
     <footer><!--rodapé-->
-        <p> &copy Quiz de programação. Todos os direitos reservados</p>
-        <p>para conhecer outros quizes <a href="https://google.com" target="_blank">clique aqui</a>i</p>
+        <p class="paragrafo-footer"> &copy Quiz de programação. Todos os direitos reservados</p>
+        <p class="paragrafo-footer">para conhecer outros quizes <a href="https://google.com" target="_blank">clique aqui</a>i</p>
 
     </footer>
 
